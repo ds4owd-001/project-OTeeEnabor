@@ -1,0 +1,29 @@
+---
+title: "South African Police Service Crime Stats - 2022-2023"
+format: html
+editor: visual
+---
+
+# Project description
+
+The **South African Police Service (SAPS)** is the national police force of the **Republic of South Africa**. There are **1154 police stations** in the country which are classified under provincial borders, with a provincial commissioner appointed for each of the **9 provinces** in South Africa. The SAPS has **117950 officers** who are responsible for the maintenance of public safety of 62 million South Africans.
+
+The SAPS in collaboration with Statistics South Africa (Stats SA), generate crime statistics quarterly and annually. The statistics are in line with international best practices and are used to inform the policy development planning in the criminal justice systems.
+
+The analysis goals:
+
+-   view the crime trends in the country
+
+-   See which crimes are most common in each province
+
+-   give commentary on which areas need more police reinforcement based
+
+## Import libraries
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+df_crime_sa = read_csv("../data/raw/2022_2023 _annual_stats_raw.csv")
+```
