@@ -18,12 +18,60 @@ The analysis goals:
 
 -   give commentary on which areas need more police reinforcement based
 
+## Methodology
+
+Crimes reported are recorded as they are received (from either the victims, witnesses or third parties) by the police or when they are detected by the police, irrespective of when the crime(s) were committed or who commited them. The crime statics are focussed on the 21 priority crimes grouped into two categories:
+
+1.  17 community-reported serious crimes
+
+    -   contact
+
+    -   contact-related
+
+    -   property-related
+
+    -   other serious crimes
+
+2.  four crimes that are detected as a result of police action.
+
 ## Import libraries
 
 ```{r}
+# load necessary libraries
 library(tidyverse)
+library(janitor)
+library(here)
 ```
 
 ```{r}
-df_crime_sa = read_csv("../data/raw/2022_2023 _annual_stats_raw.csv")
+# read in the dataset
+
+df_crime_sa = read_csv(here::here("data/raw/2022_2023 _annual_stats_raw.csv"))
+#read_csv("../data/raw/2022_2023 _annual_stats_raw.csv")
+```
+
+```{r}
+# use the clean_names function to convert variable names to snake_case convention.
+df_crime_sa_clean <- df_crime_sa |> 
+  clean_names()
+```
+
+```{r}
+# select relevant columns and remove columns with no information (NA in each row)
+df_crime_sa_clean <- df_crime_sa_clean |> 
+  select(crime_category_national_contribution_placement:count_offence_group)
+```
+
+```{r}
+glimpse(df_crime_sa_clean)
+```
+
+```{r}
+df_crime_sa_national <- df_crime_sa_clean |> 
+  filter(comp_level=="National")
+
+```
+
+```{r}
+df_crime)s
 ```
