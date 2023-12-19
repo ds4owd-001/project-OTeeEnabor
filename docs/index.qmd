@@ -1,8 +1,25 @@
 ---
 title: "South African Police Service Crime Stats - 2022-2023"
-format: html
+author: "Oselu Enabor"
+format: 
+  html:
+    fig-width: 8
+    fig-height: 6
+execute: 
+  echo: true
+  warning: false
 editor: visual
+editor_options:
+  chunk_output_type: console
 ---
+
+![](img/den-harrson-C14EEtqVsNA-unsplash.jpg)
+
+# Crime Situation in South Africa
+
+South Africa has one of the highest-crime rate in the world - which includes high rates for crimes such as assaults, rape, murder, and other violent crimes. The high crime rate has been attributed to factors such as inadequate education, unemployment, poverty, and unequal distribution of resources. Violent crimes such as rape and murder are on the increase compared to other crimes in the country. South Africa has one of the highest rape rates in the world. According to the South African Medical Research Council, 1 in 4 men surveyed have committed rape.
+
+The country crime rate affects foreign investment and reduces the faith in the government and institutions tasked with public safety.
 
 # Project description
 
@@ -18,11 +35,15 @@ The analysis goals:
 
 -   give commentary on which areas need more police reinforcement based
 
+![Members of the South African Police Service (SAPS).](https://mg.co.za/wp-content/uploads/2022/11/SAPS1-1024x683.jpg){width="427"}
+
 ## Methodology
 
-Crimes reported are recorded as they are received (from either the victims, witnesses or third parties) by the police or when they are detected by the police, irrespective of when the crime(s) were committed or who commited them. The crime statics are focussed on the 21 priority crimes grouped into two categories:
+Crimes reported are recorded as they are received (from either the victims, witnesses or third parties) by the police or when they are detected by the police, irrespective of when the crime(s) were committed or who committed them. Crime statistics are created from recording process where a crime codes are allocated to a reported crime type. A police station has to aggregate the codes in order for the province and the national to synchronize computation and distribution of reports.
 
-1.  17 community-reported serious crimes
+The crime statics are focused on the 21 priority crimes grouped into two categories:
+
+1.  **17 community-reported serious crimes**
 
     -   contact
 
@@ -32,7 +53,7 @@ Crimes reported are recorded as they are received (from either the victims, witn
 
     -   other serious crimes
 
-2.  four crimes that are detected as a result of police action.
+2.  **crimes that are detected as a result of police action.**
 
 ## Import libraries
 
@@ -44,16 +65,33 @@ library(here)
 ```
 
 ```{r}
-# read in the dataset
+filter_df <- function(df, crime_list){
+  df |> 
+    filter(crime_category%in% crime_list) |> 
+    group_by(year, crime_category, crime_count) |> 
+    summarise(
+      
+    ) |> 
+    mutate(
+      year = str_remove(year,"x")
+    )
+    
+}
+```
 
+```{r}
+# read in the dataset
 df_crime_sa = read_csv(here::here("data/raw/2022_2023 _annual_stats_raw.csv"))
 #read_csv("../data/raw/2022_2023 _annual_stats_raw.csv")
 ```
+
+## Data Preprocessing
 
 ```{r}
 # use the clean_names function to convert variable names to snake_case convention.
 df_crime_sa_clean <- df_crime_sa |> 
   clean_names()
+
 ```
 
 ```{r}
@@ -63,15 +101,291 @@ df_crime_sa_clean <- df_crime_sa_clean |>
 ```
 
 ```{r}
+## save the df_crime_sa_clean to processed folder
+# write_csv(df_crime_sa_clean,"../data/processed/df_crime_clean.csv")
+```
+
+```{r}
 glimpse(df_crime_sa_clean)
 ```
 
+## Crime Situation in the Republic of South Africa
+
+In this section, we will look at the crime trends on a national level across selected crime categories over a 10 year period. The dataset will be filtered for observations were the `comp_level` is **national.**
+
 ```{r}
-df_crime_sa_national <- df_crime_sa_clean |> 
-  filter(comp_level=="National")
+# filter the crime dataset for observations where the comp_level is equal to National
+df_crime_sa_national <- df_crime_sa_clean |>
+  filter(comp_level=="National") |> 
+  select(crime_category:count_offence_group) |> 
+  select(!provincial_contribution_placement) |> 
+  pivot_longer(
+    cols = x2013_2014:x2022_2023,
+    names_to = "year",
+    values_to = "crime_count"
+  )
 
 ```
 
+### Contact Crimes (Crimes Against The Person)
+
+Contact crimes involves crimes where victims are targets of violence or cases where victims are near property that are target by criminals and are subjected to violence or the threats of violence.
+
+The crimes included in this grouping are: Murder, Sexual offences, Attempted murder, Assault with the intention to inflict grievous bodily harm, Common assault, Common robbery, and Robbery with aggravating circumstances.
+
+Two of the crime groupings can be further subdivided into other crimes:
+
+1.  Sexual Offences
+
+    -   Rape
+
+    -   Sexual Assault
+
+    -   Attempted sexual offences
+
+    -   Contact sexual assault
+
+2.  Robbery with aggravating circumstances
+
+    -   Carjacking Robbery at Non-residential premises
+
+    -   Robbery at residential premises
+
+    -   Robbery of cash in transit
+
+    -   Truck Hijacking
+
 ```{r}
-df_crime)s
+#| eval: true
+# create contact_crimes list
+contact_crimes_list <- c("Murder", "Sexual offences", "Attempted murder", "Assault with the intent to inflict grievous bodily harm", "Common assault", "Common robbery", "Robbery with aggravating circumstances")
+
+# create contact crimes dataframe
+contact_crimes_national <- filter_df(df_crime_sa_national, contact_crimes_list)
 ```
+
+```{r}
+#| eval: true
+```
+
+```{r}
+#| eval: true
+```
+
+```{r}
+#| eval: true
+```
+
+```{r}
+#| eval: true
+#| label: fig-contact_crime_national
+#| fig-cap: "National contact crime trend between 2013 and 2023."
+#| fig-alt: "A line plot on a polar axis"
+ggplot(data = contact_crimes_national,
+       aes(
+         x = year,
+         y = crime_count,
+         group = crime_category,
+         color = crime_category
+       ))+
+  geom_line()+
+  labs (
+    title = "National Contact Crime between 2013 and 2023",
+    x = "Year",
+    y = "Number of Observations"
+
+  ) +
+  geom_label(aes(
+    label = crime_count,
+    colour = crime_category
+  ),
+  label.size = 0.1) +
+  # geom_text(check_overlap = TRUE) +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.15,"cm"))
+```
+
+According to the stats and as presented in @fig-contact_crime_national, **common assault**, assault **with the intent to inflict grievous bodily harm**, and **robbery with aggravating circumstances** have been the most frequent contact crimes in South Africa in the past 10 years.
+
+#### Sexual Offences
+
+We shall look at the occurrence of sexual offences in the country over the past 10 years.
+
+```{r}
+#| eval: true
+# create a list of offences that compose of sexual offences
+sexual_offences_list <- c("Rape","Sexual assault","Attempted sexual offences","Contact sexual offences")
+
+# filter out these offences from the national crime data frame
+sexual_offences_national <- filter_df(df_crime_sa_national, sexual_offences_list)
+```
+
+```{r}
+#| eval: true
+#| #| label: fig-sexual_offences_national
+#| fig-cap: "National sexual offences crime trend between 2013 and 2023."
+#| fig-alt: "A line plot on a polar axis"
+ggplot(data = sexual_offences_national,
+       aes(
+         x = year,
+         y = crime_count,
+         group = crime_category,
+         color = crime_category
+       ))+
+  geom_line()+
+  labs (
+    title = "National Sexual Offences between 2013 and 2023",
+    x = "Year",
+    y = "Number of Observations"
+
+  ) +
+  geom_label(aes(
+    label = crime_count,
+    colour = crime_category
+  ),
+  label.size = 0.1) +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.15,"cm"))
+```
+
+In @fig-sexual_offences_national, **rape** has consistently been the most frequent sexual offence in the past 10 years. The number of rape incidents has been 5 times greater than the other offences combined during this 10 year period. South Africa is amongst the countries with the highest rape cases in the world - [higher than countries at war](https://worldpopulationreview.com/country-rankings/rape-statistics-by-country). There were 42780 cases reported in 2022/2023, which equates to 177 incidents per day. Rape is a systemic and endemic problem in South Africa.
+
+We have seen the national trend of sexual offences in the country, we will then dig deeper to see the distribution of the incidents across country's proviences.
+
+#### Aggrevated Robbery
+
+```{r}
+#| eval: true
+#| #| label: fig-robbery_aggrevated_national
+#| fig-cap: "National Aggrebated Robbery trend between 2013 and 2023."
+#| fig-alt: "A line plot on a polar axis"
+# create a list of some of the subcategories of aggravated robbery
+robbery_agg_list <- c("Carjacking","Robbery at residential premises","Robbery at non-residential premises" )
+
+# use the list to filter national crime dataframe
+robbery_agg_national <- filter_df(df_crime_sa_national, robbery_agg_list)
+
+ggplot(data = robbery_agg_national,
+       aes(
+         x = year,
+         y = crime_count,
+         group = crime_category,
+         color = crime_category
+       ))+
+  geom_line()+
+  labs (
+    title = "National Aggrevated Robbery between 2013 and 2023",
+    x = "Year",
+    y = "Number of Observations"
+
+  ) +
+  geom_label(aes(
+    label = crime_count,
+    colour = crime_category
+  ),
+  label.size = 0.1) +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.15,"cm"))
+```
+
+The crimes in the aggrevated robbery category have all increased during this 10 year period. Robbery at residential premises has topped the list out of these three crimes. However, carjacking has stedily increased in this time period and is expected to surpass robbery at residential premises.
+
+### Contact-related Crimes
+
+Contact-related crimes consist of Arson and Malicious damage to property. These crimes have a close relationship and also involve damage to or destruction of another person's property ( usually as a means of punishment) or for the purpose of fraudulent insurance claims.
+
+```{r}
+#| eval: true
+
+# create a contact related list crimes
+contact_related_list <- c("Arson", "Malicious damage to property")
+
+contact_related_national <- filter_df(df_crime_sa_national, contact_related_list)
+
+ggplot(data = contact_related_national,
+       aes(
+         x = year,
+         y = crime_count,
+         group = crime_category,
+         color = crime_category
+       ))+
+  geom_line()+
+  labs (
+    title = "National Contact-related crimes between 2013 and 2023",
+    x = "Year",
+    y = "Number of Observations"
+
+  ) +
+  geom_label(aes(
+    label = crime_count,
+    colour = crime_category
+  ),
+  label.size = 0.1) +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.15,"cm"))
+```
+
+### Property-related crime
+
+This refers crimes refers to the hostile take over of property by criminal elements without permission. These crimes includes the burglary of both residential and non-residential properties, theft of motor vehicles and motorcycles, theft out of or from motor vehicles and livestock theft.
+
+```{r}
+#| eval: true
+
+property_related_crimes <- c("Burglary at non-residential premises", "Burglary at residential premises","Theft of motor vehicle and motorcycle","Theft of motor vehicle and motorcycle","Theft out of or from motor vehicle","Stock-theft")
+
+# property related crimes
+property_related_national <- filter_df(df_crime_sa_national, property_related_crimes)
+# plot
+ggplot(data = property_related_national,
+       aes(
+         x = year,
+         y = crime_count,
+         group = crime_category,
+         color = crime_category
+       ))+
+  geom_line()+
+  labs (
+    title = "National Property-related crimes between 2013 and 2023",
+    x = "Year",
+    y = "Number of Observations"
+
+  ) +
+  geom_label(aes(
+    label = crime_count,
+    colour = crime_category
+  ),
+  label.size = 0.1) +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.15,"cm"))
+```
+
+### Other Serious Crimes
+
+These are serious crimes which have not been included in the categories above.
+
+-   All Theft not mentioned elsewhere
+
+-   Commercial crime
+
+-   Shoplifting
+
+```{r}
+#| eval: true
+
+# create a list of the other serious crimes
+serious_crimes_list <- c("All theft not mentioned elsewhere", "Commercial crime")
+
+```
+
+## Crimes Detected as a Result of Police Action
+
+These are crimes mostly which are not reported to police, and are mostly dependent on the deployment of law enforcement and intelligence personnel. These crimes are recorded after the arrest of suspects connected to the following crimes.
+
+-   Illegal possession of firearms and ammunition
+
+-   Drug-related crimes
+
+-   Driving under the influence of alcohol and/or drugs
+
+-   Sexual offences detected as a result of police action
