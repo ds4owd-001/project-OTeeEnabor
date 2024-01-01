@@ -3,6 +3,7 @@ title: "South African Police Service Crime Stats - 2022-2023"
 author: "Oselu Enabor"
 format: 
   html:
+    toc: true
     fig-width: 8
     fig-height: 6
 execute: 
@@ -70,6 +71,8 @@ library(DT)
 library(maps)
 ```
 
+## Functions
+
 ```{r}
 filter_df <- function(df, crime_list){
   df |> 
@@ -99,6 +102,30 @@ filter_df_provincial <- function(df, crime_list){
       year = str_replace(year,"_","/")
     )
     
+}
+```
+
+```{r}
+provincial_facet <- function(df,plot_title) {
+  ggplot(
+    df,
+    aes(
+      x = year,
+      y = crime_count,
+      group = crime_category,
+      color = crime_category
+    )
+  ) +
+    geom_line() +
+    geom_point()+
+    labs(
+      title = plot_title,
+      x = "Year",
+      y = "Number of observations"
+    )+ 
+    theme(legend.position = "bottom",
+          legend.key.size = unit(0.05,"cm")) +
+    facet_wrap(~station)
 }
 ```
 
@@ -588,6 +615,58 @@ ggplot(
   theme(legend.position = "bottom",
         legend.key.size = unit(0.05,"cm"))+
   facet_wrap(~station)
+```
+
+##### Aggrevated Robbery
+
+```{r}
+# create aggrevated robbery dataframe
+robbery_agg_provincial <- filter_df_provincial(df_crime_sa_provincial,robbery_agg_list )
+
+# create aggrevated robbery facet plot
+provincial_facet(robbery_agg_provincial,
+                 "Aggrevated Robbery Trend between 2013 and 2023 by Province")
+```
+
+#### Contact Related Crimes
+
+```{r}
+# create provincial contact related crimes dataframe
+contact_related_provincial <- filter_df_provincial(df_crime_sa_provincial, contact_related_list)
+
+# create contact related crimes facet plot
+provincial_facet(contact_related_provincial, "Contact Related Crime Trend Between 2013 and 2023 by Province")
+
+```
+
+#### Property Related Crimes
+
+```{r}
+# create provincial property related crimes dataframe
+property_related_provincial <- filter_df_provincial(df_crime_sa_provincial, property_related_crimes)
+
+# create a property related crimes facet plot
+provincial_facet(property_related_provincial, "Property-related Crime Trend between 2013 and 2023 by Province")
+```
+
+#### Other Serious Crimes
+
+```{r}
+# create provincial dataframe for other serious crimes
+serious_crimes_provincial <- filter_df_provincial(df_crime_sa_provincial, serious_crimes_list)
+
+# create other serious crimes facet wrap
+provincial_facet(serious_crimes_provincial, "Other Serious Crimes Provincial Trend between 2013 and 2023")
+```
+
+#### Crimes Detected as a Result of Police action
+
+```{r}
+# create a provincial dataframe for the crimes detected as a result of police action
+police_detected_provincial <- filter_df_provincial(df_crime_sa_provincial, police_detected_list)
+
+# create a facet plot for the provincial 
+provincial_facet(police_detected_provincial, "Provincial Trend of Crimes Detected As A Result of Police Action Between 2013 and 2023")
 ```
 
 ```{r}
