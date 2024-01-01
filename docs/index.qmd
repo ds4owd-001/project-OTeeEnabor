@@ -59,9 +59,15 @@ The crime statics are focused on the 21 priority crimes grouped into two categor
 
 ```{r}
 # load necessary libraries
+library(ggplot2)
 library(tidyverse)
 library(janitor)
 library(here)
+library(gt)
+library(gtsummary)
+library(knitr)
+library(DT)
+library(maps)
 ```
 
 ```{r}
@@ -73,7 +79,24 @@ filter_df <- function(df, crime_list){
       
     ) |> 
     mutate(
-      year = str_remove(year,"x")
+      year = str_remove(year,"x"),
+      year = str_replace(year,"_","/")
+    )
+    
+}
+```
+
+```{r}
+filter_df_provincial <- function(df, crime_list){
+  df |> 
+    filter(crime_category%in% crime_list) |> 
+    group_by(year, station, crime_category, crime_count) |> 
+    summarise(
+      
+    ) |> 
+    mutate(
+      year = str_remove(year,"x"),
+      year = str_replace(year,"_","/")
     )
     
 }
@@ -111,6 +134,14 @@ glimpse(df_crime_sa_clean)
 
 ## Crime Situation in the Republic of South Africa
 
+The SAPS releases an annual crime report based on crime statistics, in which they focus on 21 priority crimes which are grouped into two main categories:
+
+-   17 community-reported serious crimes
+
+-   crimes detected as a result of police action
+
+### National Crime Trend
+
 In this section, we will look at the crime trends on a national level across selected crime categories over a 10 year period. The dataset will be filtered for observations were the `comp_level` is **national.**
 
 ```{r}
@@ -124,10 +155,9 @@ df_crime_sa_national <- df_crime_sa_clean |>
     names_to = "year",
     values_to = "crime_count"
   )
-
 ```
 
-### Contact Crimes (Crimes Against The Person)
+#### Contact Crimes (Crimes Against The Person)
 
 Contact crimes involves crimes where victims are targets of violence or cases where victims are near property that are target by criminals and are subjected to violence or the threats of violence.
 
@@ -166,18 +196,6 @@ contact_crimes_national <- filter_df(df_crime_sa_national, contact_crimes_list)
 
 ```{r}
 #| eval: true
-```
-
-```{r}
-#| eval: true
-```
-
-```{r}
-#| eval: true
-```
-
-```{r}
-#| eval: true
 #| label: fig-contact_crime_national
 #| fig-cap: "National contact crime trend between 2013 and 2023."
 #| fig-alt: "A line plot on a polar axis"
@@ -205,9 +223,29 @@ ggplot(data = contact_crimes_national,
         legend.key.size = unit(0.15,"cm"))
 ```
 
+```{r}
+#| eval: true
+```
+
+```{r}
+#| eval: true
+```
+
+```{r}
+#| eval: true
+contact_crimes_national_wide <- contact_crimes_national |> 
+  pivot_wider(
+    names_from = year,
+    values_from = crime_count
+  )
+
+contact_crimes_national_wide |> 
+  gt()
+```
+
 According to the stats and as presented in @fig-contact_crime_national, **common assault**, assault **with the intent to inflict grievous bodily harm**, and **robbery with aggravating circumstances** have been the most frequent contact crimes in South Africa in the past 10 years.
 
-#### Sexual Offences
+##### Sexual Offences
 
 We shall look at the occurrence of sexual offences in the country over the past 10 years.
 
@@ -248,11 +286,11 @@ ggplot(data = sexual_offences_national,
         legend.key.size = unit(0.15,"cm"))
 ```
 
-In @fig-sexual_offences_national, **rape** has consistently been the most frequent sexual offence in the past 10 years. The number of rape incidents has been 5 times greater than the other offences combined during this 10 year period. South Africa is amongst the countries with the highest rape cases in the world - [higher than countries at war](https://worldpopulationreview.com/country-rankings/rape-statistics-by-country). There were 42780 cases reported in 2022/2023, which equates to 177 incidents per day. Rape is a systemic and endemic problem in South Africa.
+In @fig-sexual_offences_national, **rape** has consistently been the most frequent sexual offence in the past 10 years. The number of rape incidents has been 5 times greater than the other offences combined during this 10 year period. South Africa is among the countries with the highest rape cases in the world - [higher than countries at war](https://worldpopulationreview.com/country-rankings/rape-statistics-by-country). There were 42780 cases reported in 2022/2023, which equates to 177 incidents per day. Rape is a systemic and endemic problem in South Africa.
 
-We have seen the national trend of sexual offences in the country, we will then dig deeper to see the distribution of the incidents across country's proviences.
+We have seen the national trend of sexual offences in the country, we will then dig deeper to see the distribution of the incidents across country's provinces.
 
-#### Aggrevated Robbery
+##### Aggravated Robbery
 
 ```{r}
 #| eval: true
@@ -288,15 +326,17 @@ ggplot(data = robbery_agg_national,
         legend.key.size = unit(0.15,"cm"))
 ```
 
-The crimes in the aggrevated robbery category have all increased during this 10 year period. Robbery at residential premises has topped the list out of these three crimes. However, carjacking has stedily increased in this time period and is expected to surpass robbery at residential premises.
+The crimes in the aggravated robbery category have all increased during this 10 year period. Robbery at residential premises has topped the list out of these three crimes. However, carjacking has steadily increased in this time period and is expected to surpass robbery at residential premises.
 
-### Contact-related Crimes
+#### Contact-related Crimes
 
 Contact-related crimes consist of Arson and Malicious damage to property. These crimes have a close relationship and also involve damage to or destruction of another person's property ( usually as a means of punishment) or for the purpose of fraudulent insurance claims.
 
 ```{r}
 #| eval: true
-
+#| #| label: fig-robbery_aggrevated_national
+#| fig-cap: "National Aggrebated Robbery trend between 2013 and 2023."
+#| fig-alt: "A line plot on a polar axis"
 # create a contact related list crimes
 contact_related_list <- c("Arson", "Malicious damage to property")
 
@@ -325,13 +365,15 @@ ggplot(data = contact_related_national,
         legend.key.size = unit(0.15,"cm"))
 ```
 
-### Property-related crime
+#### Property-related crime
 
 This refers crimes refers to the hostile take over of property by criminal elements without permission. These crimes includes the burglary of both residential and non-residential properties, theft of motor vehicles and motorcycles, theft out of or from motor vehicles and livestock theft.
 
 ```{r}
 #| eval: true
-
+#| #| label: fig-robbery_aggrevated_national
+#| fig-cap: "National Aggrebated Robbery trend between 2013 and 2023."
+#| fig-alt: "A line plot on a polar axis"
 property_related_crimes <- c("Burglary at non-residential premises", "Burglary at residential premises","Theft of motor vehicle and motorcycle","Theft of motor vehicle and motorcycle","Theft out of or from motor vehicle","Stock-theft")
 
 # property related crimes
@@ -360,7 +402,7 @@ ggplot(data = property_related_national,
         legend.key.size = unit(0.15,"cm"))
 ```
 
-### Other Serious Crimes
+#### Other Serious Crimes
 
 These are serious crimes which have not been included in the categories above.
 
@@ -372,13 +414,40 @@ These are serious crimes which have not been included in the categories above.
 
 ```{r}
 #| eval: true
-
+#| #| label: fig-other_serious_crimes_national
+#| fig-cap: "Trend of other serious crimes trend between 2013 and 2023."
+#| fig-alt: "A line plot on a polar axis"
 # create a list of the other serious crimes
-serious_crimes_list <- c("All theft not mentioned elsewhere", "Commercial crime")
+serious_crimes_list <- c("All theft not mentioned elsewhere", "Commercial crime", "Shoplifting")
 
+# create a dataframe for other serious crimes
+serious_crimes_national <- filter_df(df_crime_sa_national, serious_crimes_list)
+
+# plot the national trend of national serious crimes
+ggplot(data = serious_crimes_national,
+       aes(
+         x = year,
+         y = crime_count,
+         group = crime_category,
+         color = crime_category
+       ))+
+  geom_line()+
+  labs (
+    title = "National Other Serious crimes between 2013 and 2023",
+    x = "Year",
+    y = "Number of Observations"
+
+  ) +
+  geom_label(aes(
+    label = crime_count,
+    colour = crime_category
+  ),
+  label.size = 0.1) +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.15,"cm"))
 ```
 
-## Crimes Detected as a Result of Police Action
+### Crimes Detected as a Result of Police Action
 
 These are crimes mostly which are not reported to police, and are mostly dependent on the deployment of law enforcement and intelligence personnel. These crimes are recorded after the arrest of suspects connected to the following crimes.
 
@@ -389,3 +458,156 @@ These are crimes mostly which are not reported to police, and are mostly depende
 -   Driving under the influence of alcohol and/or drugs
 
 -   Sexual offences detected as a result of police action
+
+```{r}
+#| eval: true
+
+# create a list of the crimes detected as a result of police action
+police_detected_list <- c("Illegal possession of firearms and ammunition", "Drug-related crime", "Driving under the influence of alcohol or drugs", "Sexual offences detected as a result of police action")
+
+# create a dataframe for crimes detected as a result of police action
+police_detected_crimes_national <- filter_df(df_crime_sa_national, police_detected_list)
+
+# plot the national trend of crimes detected as a result of police action
+ggplot(data = police_detected_crimes_national,
+       aes(
+         x = year,
+         y = crime_count,
+         group = crime_category,
+         color = crime_category
+       ))+
+  geom_line()+
+  labs (
+    title = "National trend of crimes detected as a result of police action between 2013 and 2023",
+    x = "Year",
+    y = "Number of Observations"
+
+  ) +
+  geom_label(aes(
+    label = crime_count,
+    colour = crime_category
+  ),
+  label.size = 0.1) +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.15,"cm"))
+```
+
+## Provincial Composition of Crimes in the Country
+
+In the previous section, we looked at the national trend of crimes across the two main SAPS crime categories. This section looks at how each of the **9 provinces contribute** to the national numbers.
+
+```{r}
+# filter the crime dataset for observations where the comp_level is equal to provincial
+df_crime_sa_provincial <- df_crime_sa_clean |>
+  filter(comp_level=="Province") |> 
+  # select(crime_category:count_offence_group) |> 
+  # select(!provincial_contribution_placement) |> 
+  pivot_longer(
+    cols = x2013_2014:x2022_2023,
+    names_to = "year",
+    values_to = "crime_count"
+  )
+# group the date sae by 
+```
+
+```{r}
+# create contact crimes dataframe
+contact_crimes_provincial <- filter_df_provincial(df_crime_sa_provincial, contact_crimes_list)
+# group by year, province
+contact_province_summary <- contact_crimes_provincial |> 
+  group_by(year, station) |> 
+  summarise(
+    contact_crime = sum(crime_count)
+  )
+
+# create a stacked plot
+ggplot(
+  contact_province_summary,
+  aes(
+    fill=station, 
+    y=contact_crime,
+    x=year
+  )
+) +
+  geom_bar(position="stack", stat="identity")
+
+```
+
+#### Provincial Contact Crimes
+
+```{r}
+## create a facet plot 
+ggplot(
+  contact_crimes_provincial,
+  aes(
+    x = year,
+    y = crime_count,
+    group = crime_category, 
+    color = crime_category
+  )) +
+  geom_line() +
+  geom_point()+
+  labs (
+    title = "Provincial Contact Crimes between 2013 and 2023",
+    x = "Year",
+    y = "Number of observations"
+  ) +
+  # geom_label(
+  #   aes (
+  #     label = crime_count,
+  #     colour = crime_category
+  #   ), 
+  #   label.size = 0.01) + 
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.05,"cm")) +
+  facet_wrap(~station)
+```
+
+##### Sexual Offences
+
+```{r}
+# create sexual offences dataframe
+sexual_offences_provincial <- filter_df_provincial(df_crime_sa_provincial, sexual_offences_list)
+# create sexual offences facet plot
+ggplot(
+  sexual_offences_provincial,
+  aes(
+    x = year,
+    y = crime_count,
+    group = crime_category,
+    color = crime_category
+  )
+)+ 
+  geom_line() +
+  geom_point()+
+  labs(
+    title="Sexual Offences Trend between 2013 and 2023 by Province",
+    x = "Year",
+    y = "Number of observations"
+  )+
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.05,"cm"))+
+  facet_wrap(~station)
+```
+
+```{r}
+southafrica_map_data <- map_data("world") |> 
+  filter(region=="South Africa")
+
+ggplot(
+  southafrica_map_data,
+  aes(
+    x = long,
+    y = lat,
+    group=group
+  )
+)+ 
+  geom_polygon()
+```
+
+```{r}
+za <- world.cities
+
+za <- za[which(za$country.etc == "South Africa"),]
+view(za)
+```
