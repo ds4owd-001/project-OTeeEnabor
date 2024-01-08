@@ -34,7 +34,7 @@ The analysis goals:
 
 -   See which crimes are most common in each province
 
--   give commentary on which areas need more police reinforcement based
+-   Give commentary on which areas need more police reinforcement based
 
 ![Members of the South African Police Service (SAPS).](https://mg.co.za/wp-content/uploads/2022/11/SAPS1-1024x683.jpg){width="427"}
 
@@ -54,7 +54,7 @@ The crime statics are focused on the 21 priority crimes grouped into two categor
 
     -   other serious crimes
 
-2.  **crimes that are detected as a result of police action.**
+2.  **Crimes that are detected as a result of police action.**
 
 ## Import libraries
 
@@ -69,9 +69,19 @@ library(gtsummary)
 library(knitr)
 library(DT)
 library(maps)
+library(sf)
+library(leaflet)
 ```
 
 ## Functions
+
+**filter_df**: This function is used to filter the main crime dataframe by each category of crimes. The function takes in 2 inputs:
+
+-   *df:* an input dataframe
+
+-   *crime_list*: a list of crimes used to filter the dataframe
+
+The function returns a dataframe filtered by the *crime_list*.
 
 ```{r}
 filter_df <- function(df, crime_list){
@@ -89,6 +99,8 @@ filter_df <- function(df, crime_list){
 }
 ```
 
+**filter_provincial**: This function is an extension of the previous function. The only difference is that the input dataframe has been filtered for provincial crime statistics.
+
 ```{r}
 filter_df_provincial <- function(df, crime_list){
   df |> 
@@ -104,6 +116,12 @@ filter_df_provincial <- function(df, crime_list){
     
 }
 ```
+
+**provincial_facet**: This function creates a facet_wrap plot based on the 9 provinces in the country. The function is used to view the trend of each type of or grouping of crime(s). The function has two inputs:
+
+-   *df*: an input dataframe
+
+-   *plot_title*: plot title for the facet_wrap plot.
 
 ```{r}
 provincial_facet <- function(df,plot_title) {
@@ -129,10 +147,17 @@ provincial_facet <- function(df,plot_title) {
 }
 ```
 
+##  Import Datasets
+
 ```{r}
-# read in the dataset
+# read in the SAPS Crime dataset
 df_crime_sa = read_csv(here::here("data/raw/2022_2023 _annual_stats_raw.csv"))
 #read_csv("../data/raw/2022_2023 _annual_stats_raw.csv")
+```
+
+```{r}
+# read in SA_info_dataset
+za_df = read_csv(here::here("data/raw/South_Africa_provinces.csv"))
 ```
 
 ## Data Preprocessing
@@ -521,7 +546,40 @@ ggplot(data = police_detected_crimes_national,
 
 ## Provincial Composition of Crimes in the Country
 
-In the previous section, we looked at the national trend of crimes across the two main SAPS crime categories. This section looks at how each of the **9 provinces contribute** to the national numbers.
+In the previous section, we looked at the national trend of crimes across the two main SAPS crime categories. South Africa nine provinces are the Eastern Cape, the Free State, Gauteng, KwaZulu-Natal, Limpopo, Mpumalanga, the Northern Cape, North West, and the Western Cape.
+
+![The map of South Africa's nine provinces.](img/Map_South_Africa_nine_provinces.jpg)
+
+There is a vast size difference between the provinces, from the small and populated economic hub of Gauteng to the large and empty North West.
+
+![The land size of each South African province.](img/South_Africa_provinces_by_land_area.png)
+
+```{r}
+# view(za_df)
+# transform data to sf object
+za_sf = st_as_sf(za_df, coords  = c("long", "lat"))
+ggplot(za_sf) +
+  geom_sf(aes(
+    col=density, 
+    size=population
+  ))
+
+ggplot(
+  za_df,
+  aes(
+    x=population,
+    y=area,
+    size = density,
+    color=province
+  )
+) +
+  geom_point(alpha=0.7)+
+  scale_size(range = c(.1,24), name = "Population density")
+```
+
+Gauteng is the most densely populated province with the smallest land size and largest population of all the provinces. It is considered the economic hub of the country with a high rate of migration for better economic opportunites. The two major cities are Pretoria, the executive capital of the country, and Johannesburg, the financial hub. In 2016, Gauteng contributed 33.8% of South Africa's gross domestic product and around 5% of the GDP of Africa \[reference\]. KwaZulu-Natal follows is the second most densely poulated province, it has the biggest port in Durban, and contributed to 16% of the GDP in 2016. Western Cape, is the third major province in terms of density and economic contribution to South Africa. These three provinces are reported to contribute around two-thirds to the total economy of South Africa.
+
+This section looks at how each of the **9 provinces contribute** to the national numbers.
 
 ```{r}
 # filter the crime dataset for observations where the comp_level is equal to provincial
@@ -689,4 +747,5 @@ za <- world.cities
 
 za <- za[which(za$country.etc == "South Africa"),]
 view(za)
+head(za)
 ```
