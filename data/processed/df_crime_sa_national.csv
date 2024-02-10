@@ -1,0 +1,391 @@
+comp_level,station,district,province,crime_category,count_offence_group,x26,x27,x28,x29,x30,x31,x32,x33,x34,x35,x36,x37,x38,x39,x40,x41,x42,x43,x44,x45,x46,x47,year,crime_count
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,17023
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,17805
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,18673
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,19016
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,20336
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,21022
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,21325
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,19972
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,25181
+National,Republic Of South Africa,RSA,National,Murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,27494
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,16989
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,17537
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,18127
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,18205
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,18233
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,18980
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,18635
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,18707
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,22095
+National,Republic Of South Africa,RSA,National,Attempted murder,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,25131
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,118963
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,129045
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,132527
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,140956
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,138364
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,140032
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,143990
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,119841
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,132788
+National,Republic Of South Africa,RSA,National,Robbery with aggravating circumstances,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,146125
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,53505
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,54927
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,54110
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,53418
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,50730
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,51765
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,51825
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,37648
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,41600
+National,Republic Of South Africa,RSA,National,Common robbery,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,47057
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,45349
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,43195
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,41503
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,39828
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,40035
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,41583
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,42289
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,36330
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,41739
+National,Republic Of South Africa,RSA,National,Rape,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,42780
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,6597
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,6087
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,6212
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,6271
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,6786
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,7437
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,7749
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,7025
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,7798
+National,Republic Of South Africa,RSA,National,Sexual assault,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,7483
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,4306
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,4692
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,5013
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,4991
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,5628
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,5693
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,6623
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,6036
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,10826
+National,Republic Of South Africa,RSA,National,Kidnapping,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,15342
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,182333
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,182556
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,182933
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,170616
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,167352
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,170979
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,166720
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,143393
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,162842
+National,Republic Of South Africa,RSA,National,Assault with the intent to inflict grievous bodily harm,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,169374
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,166081
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,161486
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,164958
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,156450
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,156243
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,162012
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,165494
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,149442
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,169963
+National,Republic Of South Africa,RSA,National,Common assault,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,185374
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,73464
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,74358
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,75008
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,75618
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,71195
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,71224
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,69713
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,65508
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,62197
+National,Republic Of South Africa,RSA,National,Burglary at non-residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,62588
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,259784
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,253716
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,250606
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,246654
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,228094
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,220865
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,205959
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,159721
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,156170
+National,Republic Of South Africa,RSA,National,Burglary at residential premises,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,163493
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,24534
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,24965
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,24715
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,26902
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,28849
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,29672
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,28418
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,26310
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,25001
+National,Republic Of South Africa,RSA,National,Stock-theft,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,25255
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,70487
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,71327
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,68786
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,67454
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,62180
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,60167
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,59883
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,47331
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,42549
+National,Republic Of South Africa,RSA,National,Shoplifting,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,49697
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,56645
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,55090
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,53809
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,53307
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,50663
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,48324
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,46921
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,35023
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,37402
+National,Republic Of South Africa,RSA,National,Theft of motor vehicle and motorcycle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,37461
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,143801
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,145358
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,139386
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,138172
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,129174
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,125076
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,118213
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,83183
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,81504
+National,Republic Of South Africa,RSA,National,Theft out of or from motor vehicle,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,87173
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,363517
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,360541
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,340372
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,328272
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,302656
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,300457
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,282817
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,224345
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,249215
+National,Republic Of South Africa,RSA,National,All theft not mentioned elsewhere,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,275452
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,5458
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,5127
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,4903
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,4321
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,3869
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,4083
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,3783
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,3238
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,4102
+National,Republic Of South Africa,RSA,National,Arson,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,3626
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,117983
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,120662
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,119901
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,116409
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,111492
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,113089
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,108461
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,99031
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,113403
+National,Republic Of South Africa,RSA,National,Malicious damage to property,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,115118
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,76744
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,67830
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,69917
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,73550
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,73277
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,83823
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,83869
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,82890
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,102057
+National,Republic Of South Africa,RSA,National,Commercial crime,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,112592
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,260596
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,266902
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,259165
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,292689
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,323547
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,232657
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,170510
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,121359
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,140326
+National,Republic Of South Africa,RSA,National,Drug-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,162122
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,69725
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,68561
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,76159
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,75034
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,86160
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,82912
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,94273
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,35860
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,43873
+National,Republic Of South Africa,RSA,National,Driving under the influence of alcohol or drugs,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,41768
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,15362
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,15116
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,14772
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,16134
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,17558
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,15736
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,15779
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,12930
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,13549
+National,Republic Of South Africa,RSA,National,Illegal possession of firearms and ammunition,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,15649
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,11180
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,12773
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,14602
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,16717
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,16325
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,16026
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,18162
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,16731
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,20923
+National,Republic Of South Africa,RSA,National,Carjacking,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,22702
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,991
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,1279
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,1184
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,1183
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,1202
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,1182
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,1202
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,1397
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,1741
+National,Republic Of South Africa,RSA,National,Truck hijacking,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,1995
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,145
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,119
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,137
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,152
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,238
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,183
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,164
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,195
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,238
+National,Republic Of South Africa,RSA,National,Robbery of cash in transit,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,238
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,21
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,17
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,6
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,3
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,13
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,4
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,0
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,2
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,13
+National,Republic Of South Africa,RSA,National,Bank robbery,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,4
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,19284
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,20281
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,20820
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,22343
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,22261
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,22431
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,21130
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,20870
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,21832
+National,Republic Of South Africa,RSA,National,Robbery at residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,23065
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,18573
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,19170
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,19698
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,20680
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,20047
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,19991
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,20651
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,18231
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,20012
+National,Republic Of South Africa,RSA,National,Robbery at non-residential premises,TRIO crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,20054
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,2913
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,2641
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,2573
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,2073
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,2066
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,2146
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,2076
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,1800
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,2027
+National,Republic Of South Africa,RSA,National,Attempted sexual offences,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,2376
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,1821
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,1694
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,1607
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,1488
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,1221
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,1254
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,1179
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,1059
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,1130
+National,Republic Of South Africa,RSA,National,Contact sexual offences,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,859
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,4720
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,6340
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,5830
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,6164
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,6701
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,7976
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,9614
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,6946
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,7242
+National,Republic Of South Africa,RSA,National,Sexual offences detected as a result of police action,Sexual offences,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,9589
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,56680
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,53617
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,51895
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,49660
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,50108
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,52420
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,53293
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,46214
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,52694
+National,Republic Of South Africa,RSA,National,Sexual offences,17 Community reported serious crime,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,53498
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,49037
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,52224
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,55120
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,59740
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,58612
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,58448
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,59943
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,55831
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,62767
+National,Republic Of South Africa,RSA,National,TRIO crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,65821
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,611574
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,616973
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,623223
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,608321
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,601366
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,617210
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,621282
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,535217
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,607163
+National,Republic Of South Africa,RSA,National,Contact crime (crime against the person),0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,654053
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,123441
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,125789
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,124804
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,120730
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,115361
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,117172
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,112244
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,102269
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,117505
+National,Republic Of South Africa,RSA,National,Contact-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,118744
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,558228
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,553487
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,543524
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,540653
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,507975
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,495161
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,469224
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,369745
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,362274
+National,Republic Of South Africa,RSA,National,Property-related crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,375970
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,510748
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,499698
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,479075
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,469276
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,438113
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,444447
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,426569
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,354566
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,393821
+National,Republic Of South Africa,RSA,National,Other serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,437741
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,350403
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,356919
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,355926
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,390021
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,433966
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,339281
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,290176
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,177095
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,204990
+National,Republic Of South Africa,RSA,National,Crime detected as a result of police action,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,229128
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2013_2014,1803991
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2014_2015,1795947
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2015_2016,1770626
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2016_2017,1738980
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2017_2018,1662815
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2018_2019,1673990
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2019_2020,1629319
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2020_2021,1361797
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2021_2022,1480763
+National,Republic Of South Africa,RSA,National,17 Community reported serious crime,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,x2022_2023,1586508
