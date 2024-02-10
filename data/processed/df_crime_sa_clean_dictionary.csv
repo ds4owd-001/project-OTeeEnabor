@@ -1,0 +1,8 @@
+variable,description
+comp_level,"crime statistics compilation level. e.g national, provincial, station"
+station,name of the station where attributed to the crime statistic
+district,region within the province in which the station falls under
+province,province in which the crime statistic falls under
+crime_category,the type of crime commited
+crime_count,number of crimes reported
+X2013:x2023,year in which the crime took place

@@ -4,9 +4,11 @@ author: "Oselu Enabor"
 format: 
   html:
     toc: true
+    number-sections: true
     fig-responsive: true
     fig-width: 8
     fig-height: 6
+    code-fold: true
 execute: 
   echo: true
   warning: false
@@ -266,9 +268,11 @@ df_crime_sa_clean <- df_crime_sa |>
 
 ```{r}
 # select relevant columns and remove columns with no information (NA in each row)
+
+df_crime_sa_clean <- df_crime_sa_clean |>
+  select(crime_category_national_contribution_placement:count_offence_group)
+# further cleaning of empty columns
 df_crime_sa_clean <- subset(df_crime_sa_clean, select = -c(crime_category_national_contribution_placement,crime_category_provincial_contribution_placement, station_crime_category,code,national_contribution_placement,national_count_diff_placement,provincial_contribution_placement, provincial_count_diff_placement, count_direction))
-# df_crime_sa_clean <- df_crime_sa_clean |> 
-#   select(crime_category_national_contribution_placement:count_offence_group)
 ```
 
 ```{r}
@@ -392,7 +396,7 @@ write_csv(df_crime_sa_clean,here::here("data/processed/df_crime_clean.csv"))
 
 ```{r}
 # save the df_crime_sa_national to processed folder
-write_csv(df_crime_sa_national,  here::here("data/processed/df_crime_sa_national.csv"))
+# write_csv(df_crime_sa_national,  here::here("data/processed/df_crime_sa_national.csv"))
 
 ```
 
@@ -400,15 +404,17 @@ write_csv(df_crime_sa_national,  here::here("data/processed/df_crime_sa_national
 
 ```{r}
 # save the df_crime_sa_provincial
-write_csv(df_crime_sa_provincial, here::here("data/processed/df_crime_sa_provincial.csv"))
+# write_csv(df_crime_sa_provincial, here::here("data/processed/df_crime_sa_provincial.csv"))
 ```
 
 **SAPS Station**
 
 ```{r}
 # save the df_crime_sa_station
-write_csv(df_crime_sa_station, here::here("data/processed/df_crime_sa_station.csv"))
+# write_csv(df_crime_sa_station, here::here("data/processed/df_crime_sa_station.csv"))
 ```
+
+**World Bank Datasets**
 
 ```{r}
 # save the za_gdp to processed folder
@@ -801,7 +807,7 @@ ggplot(data = property_related_national,
         legend.key.size = unit(0.15,"cm"))
 ```
 
-In Figure @fig-property_related_national, we see that *burglary at residential premises* has been the most common **property-related crime** between 2013 and 2023. Fortunately, we can see that the general trend has been a decrease in reported cases since 2013. Interestingly, we see a drastic drop (**22%**) in reported cases between 2019/2020 to 2020/2021. It would be interesting to investigate the effects of [COVID-19 *Hard Lockdown*](https://www.gov.za/covid-19/about/about-alert-system)on this reduction. *Theft out of or from motor vehicles* is the 2nd most common crime in this category and interestingly enough - I was a victim of a [car jamming](https://weloveit.africa/how-car-jamming-works/) incident in 2021/2022.
+In Figure @fig-property_related_national, we see that *burglary at residential premises* has been the most common **property-related crime** between 2013 and 2023. Fortunately, we can see that the general trend has been a decrease in reported cases since 2013. Interestingly, we see a drastic drop (**22%**) in reported cases between 2019/2020 to 2020/2021. It would be interesting to investigate the effects of [COVID-19 *Hard Lockdown*](https://www.gov.za/covid-19/about/about-alert-system) on this reduction. *Theft out of or from motor vehicles* is the 2nd most common crime in this category and interestingly enough - I was a victim of a [car jamming](https://weloveit.africa/how-car-jamming-works/) incident in 2021/2022.
 
 #### Other Serious Crimes
 
@@ -897,7 +903,7 @@ ggplot(data = police_detected_crimes_national,
         legend.key.size = unit(0.15,"cm"))
 ```
 
-Figure @fig-police_detected_crimes_national shows the number of cases detected as a result of SAPS deployment. Therefore, making sense of this data visualisation is interesting as increases and decreases can not be interpreted in the same as the previous figures. A **decrease** can be viewed as a negative because this means SAPS deployment and an **increase** can be viewed as more effective SAPS deployment.
+Figure @fig-police_detected_crimes_national shows the number of cases detected as a result of SAPS deployment. Therefore, making sense of this data visualization is interesting as increases and decreases can not be interpreted in the same as the previous figures. A **decrease** can be viewed as a negative because this means SAPS deployment and an **increase** can be viewed as more effective SAPS deployment.
 
 ```{r}
 
@@ -920,7 +926,7 @@ contact_crimes_provincial <- filter_df_provincial(df_crime_sa_provincial, contac
 provincial_facet(contact_crimes_provincial, "Contact crime trend between 2013 and 2023 by Province")
 ```
 
-In Figure @fig-contact-crimes-provincial, we see that the three most densily populated provinces have the higher number of cases for *robbery with aggravating circumstances, assault with intent to inflict griveous bodily harm, and common assault.* In Free State, Limpopo, Mpumalanga, North West, and Northern Cape, contact crime trend has stayed relatively constant during this period of interest. However, the trend of *assault with the intention to inflict gruveous bodily harm* in Eastern Cape matches that of the big three provinces mentioned first above.
+In Figure @fig-contact-crimes-provincial, we see that the three most densely populated provinces have the higher number of cases for *robbery with aggravating circumstances, assault with intent to inflict grievous bodily harm, and common assault.* In Free State, Limpopo, Mpumalanga, North West, and Northern Cape, contact crime trend has stayed relatively constant during this period of interest. However, the trend of *assault with the intention to inflict grievous bodily harm* in Eastern Cape matches that of the big three provinces mentioned first above.
 
 ```         
 ```
@@ -938,7 +944,7 @@ provincial_facet(sexual_offences_provincial, "Sexual Offences Trend between 2013
 
 ```
 
-Figure @fig-sexual-offences-crimes-provincial, highlights South Africa's challenge with **rape**. **Rape** has the highest rates during this time period in all provinces. In each province, we see a drop in this crime between *2019/2020 and 2020/2021*. At first glance, the drop could be correlated in the **hard-lockdown** that occured due to **COVID-19.** Eastern Cape, Gauteng, and Kwazulu-Natal are the three provinces with the highest counts of **rape during this period.**
+Figure @fig-sexual-offences-crimes-provincial, highlights South Africa's challenge with **rape**. **Rape** has the highest rates during this time period in all provinces. In each province, we see a drop in this crime between *2019/2020 and 2020/2021*. At first glance, the drop could be correlated in the **hard-lockdown** that occurred due to **COVID-19.** Eastern Cape, Gauteng, and Kwazulu-Natal are the three provinces with the highest counts of **rape during this period.**
 
 ##### Aggravated Robbery
 
@@ -985,7 +991,7 @@ property_related_provincial <- filter_df_provincial(df_crime_sa_provincial, prop
 provincial_facet(property_related_provincial, "Property-related Crime Trend between 2013 and 2023 by Province")
 ```
 
-Figure @fig-property-related-crimes-provincial shows the trend of propertly-related crimes - *burgalary at residential and non-residential premises, stock-theft, theft of motor vehicle and motorcycle, and theft out of or from motor vehicles.* Gauteng has the highest rates during this period. Burglary at residential premises is the most common crime in this category in each of the provinces.
+Figure @fig-property-related-crimes-provincial shows the trend of property-related crimes - burglary *at residential and non-residential premises, stock-theft, theft of motor vehicle and motorcycle, and theft out of or from motor vehicles.* Gauteng has the highest rates during this period. Burglary at residential premises is the most common crime in this category in each of the provinces.
 
 #### Other Serious Crimes
 
@@ -1000,7 +1006,7 @@ serious_crimes_provincial <- filter_df_provincial(df_crime_sa_provincial, seriou
 provincial_facet(serious_crimes_provincial, "Other Serious Crimes Provincial Trend between 2013 and 2023")
 ```
 
-Figure @fig-other-serious-crimes-provincial shows the crime trend of crimes - *all theft not mentioned elsewhere, commercial crime, and shoplifting.* Theft is the most frequent crime in this category during this period with Gautneg and Western Cape having the highest numbers.
+Figure @fig-other-serious-crimes-provincial shows the crime trend of crimes - *all theft not mentioned elsewhere, commercial crime, and shoplifting.* Theft is the most frequent crime in this category during this period with Gauteng and Western Cape having the highest numbers.
 
 #### Crimes Detected as a Result of Police action
 
@@ -1015,7 +1021,7 @@ police_detected_provincial <- filter_df_provincial(df_crime_sa_provincial, polic
 provincial_facet(police_detected_provincial, "Provincial Trend of Crimes Detected As A Result of Police Action Between 2013 and 2023")
 ```
 
-Figure @fig-crimes-police-detected-provincial shows the crime trend of crimes - *driving under the influence, drug-related crimes, illegal possesion of firearms and ammunition, and sexual offences detected as a result of police action.* The crimes detected as a result of police action has stayed relatively constant in all the provinces besides Western Cape, Gauteng, and Kwazulu-Natal. We see a reduction in police detecting drug-related crimes in these provinces from 2017/2018.
+Figure @fig-crimes-police-detected-provincial shows the crime trend of crimes - *driving under the influence, drug-related crimes, illegal possession of firearms and ammunition, and sexual offences detected as a result of police action.* The crimes detected as a result of police action has stayed relatively constant in all the provinces besides Western Cape, Gauteng, and Kwazulu-Natal. We see a reduction in police detecting drug-related crimes in these provinces from 2017/2018.
 
 ### Station Crime Trend
 
@@ -1141,6 +1147,8 @@ kidnapping_station10
 ```
 
 # Conclusion
+
+In conclusion, we analysed the state of crime in the Reublic of South Africa using crime statistics published by the South African Police Service.
 
 # References
 
