@@ -30,13 +30,13 @@ editor_options:
 
 # Introduction: Crime situation in South Africa
 
-South Africa has one of the highest-crime rate in the world - which includes high rates for crimes such as assaults, rape, murder, and other violent crimes. The high crime rate has been attributed to factors such as inadequate education, unemployment, poverty, and unequal distribution of resources [@akinola2023youth; @bhorat2017socio; @brown2001determinants]. Violent crimes such as rape and murder are on the increase compared to other crimes in the country. The country crime rate affects foreign investment and reduces the faith in the government and institutions tasked with public safety.
+South Africa has one of the highest-crime rate in the world - which includes high rates for crimes such as assaults, rape, murder, and other violent crimes. The high crime rate has been attributed to factors such as inadequate education, unemployment, poverty, and unequal distribution of resources [@akinola2023youth; @bhorat2017socio; @brown2001determinants]. Violent crimes such as rape and murder are on the increase compared to other crimes in the country [@glaser2008violent]. Crime rate has a negative effect on foreign investments and reduces the faith in the government and institutions tasked with public safety [@brown2017effect].
 
 ## Project description
 
-The **South African Police Service (SAPS)** is the national police force of the **Republic of South Africa**. There are **1154 police stations** in the country which are classified under provincial borders, with a provincial commissioner appointed for each of the **9 provinces** in South Africa. The SAPS has **117950 officers** who are responsible for the maintenance of public safety of 62 million South Africans.
+The [**South African Police Service (SAPS)**](https://www.saps.gov.za/) is the national police force of the **Republic of South Africa**. There are **1154 police stations** in the country which are classified under provincial borders, with a provincial commissioner appointed for each of the **9 provinces** in South Africa. The SAPS has **117950 officers** who are responsible for the maintenance of public safety of 62 million South Africans.
 
-The SAPS in collaboration with Statistics South Africa (Stats SA), generate crime statistics quarterly and annually. The statistics are in line with international best practices and are used to inform the policy development planning in the criminal justice systems.
+The SAPS in collaboration with [**Statistics South Africa (Stats SA)**](https://www.statssa.gov.za/), generate crime statistics quarterly and annually. The statistics are in line with international best practices and are used to inform the policy development planning in the criminal justice systems.
 
 ## Objectives
 
@@ -223,7 +223,7 @@ df_crime_sa = read_csv(here::here("data/raw/2022_2023 _annual_stats_raw.csv"))
 head(df_crime_sa)
 ```
 
-Import the csv file containing general information (population, land size, density) about South African provinces.
+Import the csv file containing general information (population, land size, density) about South African provinces.\`
 
 ```{r}
 # read in SA_info_dataset
