@@ -1,6 +1,6 @@
 ---
 title-block-banner: true
-title: "Dive into South African Police Service Crime Stats:2022-2023"
+title: "Dive Into South African Police Service Crime Stats:2022-2023"
 date: 2024-02-13
 date-format: "YYYY-MM-D"
 author: 
@@ -34,9 +34,7 @@ South Africa has one of the highest-crime rate in the world - which includes hig
 
 ## Project description
 
-The [**South African Police Service (SAPS)**](https://www.saps.gov.za/) is the national police force of the **Republic of South Africa**. There are **1154 police stations** in the country which are classified under provincial borders, with a provincial commissioner appointed for each of the **9 provinces** in South Africa. The SAPS has **117950 officers** who are responsible for the maintenance of public safety of 62 million South Africans.
-
-The SAPS in collaboration with [**Statistics South Africa (Stats SA)**](https://www.statssa.gov.za/), generate crime statistics quarterly and annually. The statistics are in line with international best practices and are used to inform the policy development planning in the criminal justice systems.
+The [**South African Police Service (SAPS)**](https://www.saps.gov.za/) is the national police force of the **Republic of South Africa**. There are **1154 police stations** in the country which are classified under provincial borders, with a provincial commissioner appointed for each of the **9 provinces** in South Africa. The SAPS has **117950 officers** who are responsible for the maintenance of public safety of 62 million South Africans. The SAPS in collaboration with [**Statistics South Africa (Stats SA)**](https://www.statssa.gov.za/), generate crime statistics quarterly and annually. The statistics are in line with international best practices and are used to inform the policy development planning in the criminal justice systems.
 
 ## Objectives
 
@@ -54,7 +52,7 @@ The objectives of this data analysis project is as follows:
 
 **SAPS Crime Data**
 
-According to the [SAPS website](https://www.saps.gov.za/services/crimestats.php), crimes reported are recorded as they are received (from either the victims, witnesses or third parties) by the police or when they are detected by the police, irrespective of when the crime(s) were committed or who committed them. Crime statistics are created from recording process where a crime codes are allocated to a reported crime type. A police station has to aggregate the codes in order for the province and the national to synchronize computation and distribution of reports. The crime statics are focused on the 21 priority crimes grouped into two categories:
+According to the [SAPS website](https://www.saps.gov.za/services/crimestats.php), crimes reported are recorded as they are received (from either the victims, witnesses or third parties) by the police or when they are detected by the police, irrespective of when the crime(s) were committed or who committed them. Crime statistics are created from recording process where crime codes are allocated to a reported crime type. Police stations then aggregate the codes in order for the province and the national to synchronize computation and distribution of reports. The crime statics are focused on the **21 priority crimes** grouped into two categories:
 
 1.  **17 community-reported serious crimes**
 
@@ -70,7 +68,15 @@ According to the [SAPS website](https://www.saps.gov.za/services/crimestats.php)
 
 **World Bank Datasets**
 
-The [World Bank datasets](https://data.worldbank.org/) used in this project were collected from their site. The collected datasets will then be processed to only include observations relevant to South Africa. The methodology used to accomplish the project objectives is organised as follows. Firstly, the R libraries used are imported followed by the definition of custom-functions used to simply the analysis task . The raw data sets are imported and processed to make them analysis ready. An overview of South Africa is presented. This includes chosen statistics from the World Bank, and an overview of the make up of the country. The analysis of the processed crime data will start at the **national** level, then progress to the **provincial** level, and conclude at the **station** level within each province.
+The following were collected from [World Bank Data](https://data.worldbank.org/) and filtered to get South African records:
+
+-   Gross Domestic Product (GDP) per capita
+
+-   Unemployment (%total labour force)
+
+-   Population
+
+The methodology used to accomplish the project objectives is organised as follows. Firstly, the R libraries used are imported followed by the definition of custom-functions used to simply the analysis task . The raw data sets are imported and processed to make them analysis ready. An overview of South Africa is presented. This includes chosen statistics from the World Bank, and an overview of the make up of the country. The analysis of the processed crime data will start at the **national** level, then progress to the **provincial** level, and conclude at the **station** level within each province.
 
 ## Install libraries
 
@@ -134,7 +140,7 @@ filter_df <- function(df, crime_list){
 }
 ```
 
-**filter_provincial**: This function is an extension of the previous function. The only difference is that the input dataframe has been filtered for provincial crime statistics.
+**filter_provincial**: This function is an extension of the previous function. The only difference is that the **input dataframe has been filtered for provincial crime statistics**.
 
 ```{r}
 filter_df_provincial <- function(df, crime_list){
@@ -152,7 +158,7 @@ filter_df_provincial <- function(df, crime_list){
 }
 ```
 
-**provincial_facet**: This function creates a facet_wrap plot based on the 9 provinces in the country. The function is used to view the trend of each type of or grouping of crime(s). The function has two inputs:
+**provincial_facet**: This function creates a **facet_wrap plot** based on the 9 provinces in the country. The function is used to **view the trend of each type of or grouping of crime(s)**. The function has two inputs:
 
 -   *`df`*: an input dataframe
 
@@ -183,11 +189,11 @@ provincial_facet <- function(df,plot_title) {
 }
 ```
 
-**Station:** This function is used to generate the top N stations that have the highest number of reported cases for a specific crime.
+**Station:** This function is used to generate the **top N stations** that have the highest number of reported cases for a specific crime.
 
--   `df`: dataframe of south african crimes
+-   `df`: dataframe of South African crimes
 
--   `crime_filter`: filters the dataframe for the interested crime
+-   `crime_filter`: filters the dataframe for the crime of interest
 
 -   `crime_title`: title for the output table
 
