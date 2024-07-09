@@ -1156,8 +1156,8 @@ Table @tbl-attsexoffence-station shows the stations with the highest cases of at
 #| label: tbl-property-related-station
 #| tbl-cap: The stations in South Africa with the most cases for Property-related Crimes.
 
-station_crime_rank(df_crime_sa_station,property_related_crimes,"Property Related Crimes",10)
-
+proprerty_station<- station_crime_rank(df_crime_sa_station,property_related_crimes,"Property Related Crimes",10)
+proprerty_station
 ```
 
 ```         
@@ -1198,6 +1198,16 @@ kidnapping_station10
 ```
 
 Table @tbl-kidnapping-station shows the stations with the highest number of kidnapping cases in the country between 2013 and 2023. The top 10 stations are from Gauteng and Kwazulu-Natal with one station from Mpumalanga. Kidnapping in South Africa is a fairly recent trend and according to [Institute For Security Studies](https://issafrica.org/iss-today/to-reduce-kidnappings-south-africas-police-must-tackle-armed-robbery), this crime is four times higher compared to 10 years ago and can be linked to the growth of violent and organised crime in the country.
+
+### Other Serious Crimes
+
+```{r}
+#| label: tbl-other-serious-station
+#| tbl-cap: The stations in South Africa with the most cases of other serious crimes.
+
+serious_crimes_station<- station_crime_rank(df_crime_sa_station,serious_crimes_list,"Other Serious Crimes",10)
+serious_crimes_station
+```
 
 ```         
 ```
