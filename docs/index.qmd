@@ -240,6 +240,7 @@ station_crime_rank <- function(df,crime_filter,crime_title, rank){
 Import the SAPS Annual Statistics raw csv file.
 
 ```{r}
+#| eval: false  
 # read in the SAPS Crime dataset
 df_crime_sa = read_csv(here::here("data/raw/2022_2023 _annual_stats_raw.csv"))
 #read_csv("../data/raw/2022_2023 _annual_stats_raw.csv")
@@ -250,6 +251,7 @@ head(df_crime_sa)
 Import the csv file containing general information (population, land size, density) about South African provinces.\`
 
 ```{r}
+#| eval: false
 # read in SA_info_dataset
 za_df = read_csv(here::here("data/raw/South_Africa_provinces.csv"))
 # show first five observations
@@ -265,6 +267,7 @@ Import the following World Bank datasets:
 -   Population (1960 - 2023)
 
 ```{r}
+#| eval: false
 # import World Bank GDP Per Capita
 wb_gdp = read_csv(here::here("data/raw/World_bank_GDP_Per_Capita.csv"))
 
@@ -275,6 +278,7 @@ head(wb_gdp)
 ```
 
 ```{r}
+#| eval: false
 # import unemployment (% total labor force)
 wb_uem = read_csv(here::here("data/raw/World_bank_unemployment_total_work_force.csv"))
 
@@ -284,6 +288,7 @@ head(wb_uem)
 ```
 
 ```{r}
+#| eval: false
 # import population stats
 wb_pop = read_csv(here::here("data/raw/World_Bank_Population_total.csv"))
 
@@ -300,6 +305,7 @@ head(wb_pop)
 **SAPS Raw**
 
 ```{r}
+#| eval: false
 # use the clean_names function to convert variable names to snake_case convention.
 df_crime_sa_clean <- df_crime_sa |> 
   clean_names()
@@ -307,6 +313,7 @@ df_crime_sa_clean <- df_crime_sa |>
 ```
 
 ```{r}
+#| eval: false
 # select relevant columns and remove columns with no information (NA in each row)
 
 df_crime_sa_clean <- df_crime_sa_clean |>
@@ -316,6 +323,7 @@ df_crime_sa_clean <- subset(df_crime_sa_clean, select = -c(crime_category_nation
 ```
 
 ```{r}
+#| eval: false
 # show first 5 observations
 head(df_crime_sa_clean)
 ```
@@ -323,6 +331,7 @@ head(df_crime_sa_clean)
 **National**
 
 ```{r}
+#| eval: false
 # filter the crime dataset for observations where the comp_level is equal to National
 df_crime_sa_national <- df_crime_sa_clean |>
   filter(comp_level=="National") |> 
@@ -341,7 +350,7 @@ head(df_crime_sa_national)
 **Provincial**
 
 ```{r}
-#| eval: true
+#| eval: false
 # filter the crime dataset for observations where the comp_level is equal to provincial
 df_crime_sa_provincial <- df_crime_sa_clean |>
   filter(comp_level=="Province") |> 
@@ -360,7 +369,7 @@ head(df_crime_sa_provincial)
 **Station**
 
 ```{r}
-#| eval: true
+#| eval: false
 # filter the crime dataset for observations where the comp_level is equal to station
 df_crime_sa_station <- df_crime_sa_clean |> 
   filter(comp_level=="Station") |> 
@@ -379,6 +388,7 @@ head(df_crime_sa_station)
 The data sets are all in a wide format, the preprocessing done will be to transform them to a long format and convert the values in the *year* column to numbers.
 
 ```{r}
+#| eval: false
 # GDP per capita
 za_gdp <- wb_gdp |> 
   filter(`Country Code` == "ZAF") |> 
@@ -394,6 +404,7 @@ za_gdp <- wb_gdp |>
 ```
 
 ```{r}
+#| eval: false
 # unemployment (%total labour force)
 za_uem <- wb_uem |> 
   filter(`Country Code`=="ZAF") |> 
@@ -409,6 +420,7 @@ za_uem <- wb_uem |>
 ```
 
 ```{r}
+#| eval: false
 # population stats
 za_pop <- wb_pop |> 
   filter(`Country Code` == "ZAF") |> 
@@ -1210,6 +1222,16 @@ serious_crimes_station
 ```
 
 ```         
+```
+
+### Crimes Detected as a Result of Police Action
+
+```{r}
+#| label: tbl-police-action-station
+#| tbl-cap: The stations in South Africa with the most cases due to police action.
+
+police_action_station<- station_crime_rank(df_crime_sa_station,police_detected_list,"Police Action",10)
+police_action_station
 ```
 
 # Conclusion
