@@ -1152,6 +1152,14 @@ Table @tbl-attsexoffence-station shows the stations with the highest cases of at
 
 ### **Property related crimes**
 
+```{r}
+#| label: tbl-property-related-station
+#| tbl-cap: The stations in South Africa with the most cases for Property-related Crimes.
+
+station_crime_rank(df_crime_sa_station,property_related_crimes,"Property Related Crimes",10)
+
+```
+
 ```         
 ```
 
