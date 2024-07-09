@@ -7,7 +7,7 @@ author:
   - name: "Oselu Enabor"
     orcid: 0000-0003-3813-2474
     email: oenabor@gmail.com
-abstract: Crime trends in South Africa has been on the increase since 1996 with major cities following the national trend. The increase in population, unequal wealth distribution, rising unemployment rates and erosion of public trust in the government due to corruption and malfeasance has not assisted in curbing the levels of crime. Crime statistics in the country are published by the South African Police Service, who are responsible for enforcing the laws and maintaining peace and order in the country. These statistics are published in collaboration with Statistics South Africa, the national statistical service of the nation. In this project, we analyse the crime trend in the country between 2013 and 2023.
+abstract: Crime trends in South Africa have been on the increase since 1996 with major cities following the national trend. The increase in population, unequal wealth distribution, rising unemployment rates and erosion of public trust in the government due to corruption and malfeasance has not assisted in curbing the levels of crime. Crime statistics in the country are published by the South African Police Service, who are responsible for enforcing the laws and maintaining peace and order in the country. These statistics are published in collaboration with Statistics South Africa, the national statistical service of the nation. In this project, we analyse the crime trend in the country between 2013 and 2023.
 license: "CC BY"
 format: 
   html:
