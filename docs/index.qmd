@@ -182,9 +182,14 @@ provincial_facet <- function(df,plot_title) {
       x = "Year",
       y = "Number of observations"
     )+ 
-    theme(axis.text.x = element_text(hjust=1, size=6,angle=45),
+    theme(
+      plot.margin = margin(1,1,1,1,"cm"),
+      axis.text.x = element_text(hjust=1, size=6,angle=45),
       legend.position = "bottom",
-          legend.key.size = unit(0.05,"cm")) +
+      legend.key.size = unit(0.05,"cm")) +
+    guides(
+      colour=guide_legend(ncol=1)
+    )+
     facet_wrap(~station)
 }
 ```
@@ -240,7 +245,6 @@ station_crime_rank <- function(df,crime_filter,crime_title, rank){
 Import the SAPS Annual Statistics raw csv file.
 
 ```{r}
-#| eval: false  
 # read in the SAPS Crime dataset
 df_crime_sa = read_csv(here::here("data/raw/2022_2023 _annual_stats_raw.csv"))
 #read_csv("../data/raw/2022_2023 _annual_stats_raw.csv")
@@ -251,11 +255,10 @@ head(df_crime_sa)
 Import the csv file containing general information (population, land size, density) about South African provinces.\`
 
 ```{r}
-#| eval: false
 # read in SA_info_dataset
 za_df = read_csv(here::here("data/raw/South_Africa_provinces.csv"))
 # show first five observations
-head(za_df)
+#head(za_df)
 ```
 
 Import the following World Bank datasets:
@@ -267,33 +270,32 @@ Import the following World Bank datasets:
 -   Population (1960 - 2023)
 
 ```{r}
-#| eval: false
+
 # import World Bank GDP Per Capita
 wb_gdp = read_csv(here::here("data/raw/World_bank_GDP_Per_Capita.csv"))
 
 # show first 5 observations
-head(wb_gdp)
+#head(wb_gdp)
 
 
 ```
 
 ```{r}
-#| eval: false
 # import unemployment (% total labor force)
 wb_uem = read_csv(here::here("data/raw/World_bank_unemployment_total_work_force.csv"))
 
 # show first 5 observations
-head(wb_uem)
+#head(wb_uem)
 
 ```
 
 ```{r}
-#| eval: false
+
 # import population stats
 wb_pop = read_csv(here::here("data/raw/World_Bank_Population_total.csv"))
 
 # show first 5 observations
-head(wb_pop)
+#head(wb_pop)
 ```
 
 ```{r}
@@ -305,7 +307,7 @@ head(wb_pop)
 **SAPS Raw**
 
 ```{r}
-#| eval: false
+
 # use the clean_names function to convert variable names to snake_case convention.
 df_crime_sa_clean <- df_crime_sa |> 
   clean_names()
@@ -313,7 +315,7 @@ df_crime_sa_clean <- df_crime_sa |>
 ```
 
 ```{r}
-#| eval: false
+
 # select relevant columns and remove columns with no information (NA in each row)
 
 df_crime_sa_clean <- df_crime_sa_clean |>
@@ -331,7 +333,7 @@ head(df_crime_sa_clean)
 **National**
 
 ```{r}
-#| eval: false
+
 # filter the crime dataset for observations where the comp_level is equal to National
 df_crime_sa_national <- df_crime_sa_clean |>
   filter(comp_level=="National") |> 
@@ -344,13 +346,13 @@ df_crime_sa_national <- df_crime_sa_clean |>
   )
 
 # show first 5 observations
-head(df_crime_sa_national)
+#head(df_crime_sa_national)
 ```
 
 **Provincial**
 
 ```{r}
-#| eval: false
+
 # filter the crime dataset for observations where the comp_level is equal to provincial
 df_crime_sa_provincial <- df_crime_sa_clean |>
   filter(comp_level=="Province") |> 
@@ -363,13 +365,13 @@ df_crime_sa_provincial <- df_crime_sa_clean |>
   )
 
 # show first 5 observations
-head(df_crime_sa_provincial)
+#head(df_crime_sa_provincial)
 ```
 
 **Station**
 
 ```{r}
-#| eval: false
+
 # filter the crime dataset for observations where the comp_level is equal to station
 df_crime_sa_station <- df_crime_sa_clean |> 
   filter(comp_level=="Station") |> 
@@ -380,7 +382,7 @@ df_crime_sa_station <- df_crime_sa_clean |>
   )
 
 # show first 5 observations
-head(df_crime_sa_station)
+#head(df_crime_sa_station)
 ```
 
 **World Bank Datasets**
@@ -388,7 +390,7 @@ head(df_crime_sa_station)
 The data sets are all in a wide format, the preprocessing done will be to transform them to a long format and convert the values in the *year* column to numbers.
 
 ```{r}
-#| eval: false
+
 # GDP per capita
 za_gdp <- wb_gdp |> 
   filter(`Country Code` == "ZAF") |> 
@@ -404,7 +406,7 @@ za_gdp <- wb_gdp |>
 ```
 
 ```{r}
-#| eval: false
+
 # unemployment (%total labour force)
 za_uem <- wb_uem |> 
   filter(`Country Code`=="ZAF") |> 
@@ -420,7 +422,7 @@ za_uem <- wb_uem |>
 ```
 
 ```{r}
-#| eval: false
+
 # population stats
 za_pop <- wb_pop |> 
   filter(`Country Code` == "ZAF") |> 
@@ -433,6 +435,31 @@ za_pop <- wb_pop |>
   mutate(
     year=parse_number(year)
   )
+```
+
+Join the World Bank data sets
+
+```{r}
+# join all the world bank dataset into one by year
+za_joined <- inner_join(
+  za_pop,
+  za_gdp,
+  by="year"
+) |>
+  inner_join(
+    za_uem,
+    by="year"
+  ) |> 
+  select(
+    year,
+    population,
+    gdp_per_capita,
+    unemployment
+  )
+```
+
+```{r}
+
 ```
 
 ## Save processed files
@@ -582,7 +609,14 @@ za_sf = st_as_sf(za_df, coords  = c("long", "lat"))
 ggplot(za_sf) +
   geom_sf(aes(col=density,
               size=population)
-          )
+          ) +
+  labs (
+    title = "South Africa Population and Density",
+    x = "Longitude",
+    y = "Lattitude") 
+#+
+#  theme(legend.position = "bottom",
+#        legend.key.size = unit(0.15,"cm"))
 # ggplot(za_df,
 #        aes(x=population,
 #            y=area,
@@ -609,7 +643,7 @@ The SAPS releases an annual crime report based on crime statistics, in which the
 In this section, we will look at the crime trends on a **national level across selected crime categories over a 10 year period**. The dataset will be filtered for observations were the `comp_level` is **national.**
 
 ```{r}
-
+#
 ```
 
 ### Contact Crimes (Crimes Against The Person)
@@ -647,6 +681,8 @@ contact_crimes_list <- c("Murder", "Sexual offences", "Attempted murder", "Assau
 
 # create contact crimes dataframe
 contact_crimes_national <- filter_df(df_crime_sa_national, contact_crimes_list)
+# view contact_crimes_national
+head(contact_crimes_national)
 ```
 
 ```{r}
@@ -675,7 +711,8 @@ ggplot(data = contact_crimes_national,
   ),
   label.size = 0.1) +
   # geom_text(check_overlap = TRUE) +
-  theme(legend.position = "bottom")#legend.key.size = unit(0.15,"cm"))
+  theme(legend.position = "bottom") +#legend.key.size = unit(0.15,"cm"))
+  guides(colour = guide_legend(ncol = 1))
 ```
 
 ```{r}
@@ -1026,7 +1063,7 @@ provincial_facet(contact_related_provincial, "Contact Related Crime Trend Betwee
 
 ```
 
-Figure @fig-contact-related-crimes-provincial shows the trend of contact-related crimes - *arson and malicious damage to property.* Malicious damage to property is the more frequent crime and we see the highest rates in - Gauteng, Western Cape, and Kwazulu-Natal.
+Figure @fig-contact-related-crimes-provincial shows the trend of contact-related crimes - *arson and malicious damage to property.* Malicious damage to property is the more frequent crime and we see the highest rates in - Gauteng, Western Cape, and KwaZulu-Natal.
 
 ### Property Related Crimes
 
@@ -1071,7 +1108,7 @@ police_detected_provincial <- filter_df_provincial(df_crime_sa_provincial, polic
 provincial_facet(police_detected_provincial, "Provincial Trend of Crimes Detected As A Result of Police Action Between 2013 and 2023")
 ```
 
-Figure @fig-crimes-police-detected-provincial shows the crime trend of crimes - *driving under the influence, drug-related crimes, illegal possession of firearms and ammunition, and sexual offences detected as a result of police action.* The crimes detected as a result of police action has stayed relatively constant in all the provinces besides Western Cape, Gauteng, and Kwazulu-Natal. We see a reduction in police detecting drug-related crimes in these provinces from 2017/2018.
+Figure @fig-crimes-police-detected-provincial shows the crime trend of crimes - *driving under the influence, drug-related crimes, illegal possession of firearms and ammunition, and sexual offences detected as a result of police action.* The crimes detected as a result of police action has stayed relatively constant in all the provinces besides Western Cape, Gauteng, and kwaZulu-Natal. We see a reduction in police detecting drug-related crimes in these provinces from 2017/2018.
 
 ## Station Crime Trend
 
@@ -1090,7 +1127,7 @@ contact_station10
 
 ```
 
-Table @tbl-contact-station shows the top `10` stations with the highest amount of contact crime cases in South Africa between 2013 and 2023. We can see that stations are all from Gauteng, Western Cape, or Kwazulu-Natal. The stations are all based in under-resourced neighbourhoods (townships) which are densely populated. The City of Cape Town District and eThekwini District are the only districts from Western Cape and Kwazulu-Natal, respectively. In Gauteng, Johannesburg District and Tshwane (Pretoria) District make the top 10.
+Table @tbl-contact-station shows the top `10` stations with the highest amount of contact crime cases in South Africa between 2013 and 2023. We can see that stations are all from Gauteng, Western Cape, or kwaZulu-Natal. The stations are all based in under-resourced neighbourhoods (townships) which are densely populated. The City of Cape Town District and eThekwini District are the only districts from Western Cape and kwaZulu-Natal, respectively. In Gauteng, Johannesburg District and Tshwane (Pretoria) District make the top 10.
 
 We now look at selected crimes in the contact crimes category.
 
@@ -1113,7 +1150,7 @@ murder_station10 <- station_crime_rank(df_crime_sa_station,"Murder","Murder", 10
 murder_station10
 ```
 
-Table @tbl-murder-station shows the stations which had the highest number of reported cases of murder between 2013 and 2023. The City of Cape Town District has been called the murder capital of South Africa. There 7 stations from this district in the top 10 and this is due to the high level of poverty and gangsterism in these under-resourced communities. The remaining three are from Kwazulu-Natal (eThwekini District) with Inanda second on the list.
+Table @tbl-murder-station shows the stations which had the highest number of reported cases of murder between 2013 and 2023. The City of Cape Town District has been called the murder capital of South Africa. There 7 stations from this district in the top 10 and this is due to the high level of poverty and gangsterism in these under-resourced communities. The remaining three are from kwaZulu-Natal (eThwekini District) with Inanda second on the list.
 
 #### **Sexual Offences**
 
@@ -1125,7 +1162,7 @@ sexoffence_station10 <- station_crime_rank(df_crime_sa_station,"Sexual offences"
 sexoffence_station10
 ```
 
-Table @tbl-sexoffences-station shows the stations that had the highest number of reported cases for sexual offences between 2013 and 2023. Inanda, Kwazulu-Natal has the highest number of cases for sexual offences in this period. Eastern Cape (Lusikisiki and Mthatha) and Limpopo (Thohoyandou) , which have not appeared in the previous tables are included in the top 10.
+Table @tbl-sexoffences-station shows the stations that had the highest number of reported cases for sexual offences between 2013 and 2023. Inanda, kwaZulu-Natal has the highest number of cases for sexual offences in this period. Eastern Cape (Lusikisiki and Mthatha) and Limpopo (Thohoyandou) , which have not appeared in the previous tables are included in the top 10.
 
 ##### **Robbery with aggravating circumstances**
 
@@ -1232,6 +1269,11 @@ serious_crimes_station
 
 police_action_station<- station_crime_rank(df_crime_sa_station,police_detected_list,"Police Action",10)
 police_action_station
+```
+
+```{r}
+# farm_murders
+station_crime_rank(df_crime_sa_station,"farm","Police Action",10)
 ```
 
 # Conclusion
