@@ -103,6 +103,8 @@ install.packages(leaflet)
 library(ggplot2)
 library(dplyr)
 library(tidyverse)
+library(ggcorrplot)
+library(scales)
 library(janitor)
 library(here)
 library(gt)
@@ -155,6 +157,32 @@ filter_df_provincial <- function(df, crime_list){
       year = str_replace(year,"_","/")
     )
     
+}
+```
+
+**correlation_df:** This functions creates a dataframe to be used to calculate the correlation between crimes and the chosen world bank indicators. The function has two input dataframes:
+
+`crime_df_national:` dataframe containing the crime counts for each category on a national level.
+
+`wb_indicators_df:` dataframe with world bank indicators used in this study.
+
+```{r}
+correlation_df <- function (crime_df_national, wb_indicators_df){
+  # convert national df to wide format
+  crime_df_national |> 
+   pivot_wider(
+     names_from = crime_category,
+     values_from = crime_count
+   ) |> 
+   mutate(
+     year = substring(year,1,4),
+     year = parse_double(year)
+   ) |> 
+  # join crime_df_national with wb_indicators by year
+    inner_join(
+      wb_indicators_df,
+      by="year"
+    )
 }
 ```
 
@@ -710,13 +738,36 @@ ggplot(data = contact_crimes_national,
     #,colour = crime_category
   ),
   label.size = 0.1) +
-  # geom_text(check_overlap = TRUE) +
-  theme(legend.position = "bottom") +#legend.key.size = unit(0.15,"cm"))
+  theme(legend.position = "bottom") +
   guides(colour = guide_legend(ncol = 1))
 ```
 
 ```{r}
 #| eval: true
+# create contact correlation - round to 1 decimal
+contact_wb_corr <- round(cor(correlation_df(contact_crimes_national, za_joined)),1)
+
+#-----------calculate p values and marking insignificant corr values------------
+# calculate p-values
+p_contact <- cor_pmat(correlation_df(contact_crimes_national, za_joined))
+
+# apply ggcorrplot 
+ggcorrplot(contact_wb_corr,
+           hc.order=TRUE,
+           type="lower",
+           p.mat = p_contact,
+           title="Correlation between ZAF indicators and contact crimes",
+           legend.title = "Pearson\n Corr",
+           lab=TRUE,
+           lab_size=2,
+           ggtheme = theme_grey
+           )+
+  scale_x_discrete(labels = label_wrap(25))+
+  theme(
+    axis.text.x = element_text(size=10)
+  )
+
+
 ```
 
 ```{r}
@@ -724,13 +775,16 @@ ggplot(data = contact_crimes_national,
 ```
 
 ```{r}
-#| eval: false
-# contact_crimes_national_wide <- contact_crimes_national |> 
-#   pivot_wider(
-#     names_from = year,
-#     values_from = crime_count
-#   )
-# 
+contact_crimes_national_wide <- contact_crimes_national |> 
+   pivot_wider(
+     names_from = crime_category,
+     values_from = crime_count
+   ) |> 
+   mutate(
+     year = substring(year,1,4)
+   )
+  
+ 
 # contact_crimes_national_wide |> 
 #   gt()
 ```
@@ -775,7 +829,8 @@ ggplot(data = sexual_offences_national,
   ),
   label.size = 0.1) +
   theme(legend.position = "bottom",
-        legend.key.size = unit(0.15,"cm"))
+        legend.key.size = unit(0.15,"cm"))+
+  guides(colour = guide_legend(ncol = 1))
 ```
 
 In @fig-sexual_offences_national, **rape** has consistently been the most frequent sexual offence in the past 10 years. The number of rape incidents has been 5 times greater than the other offences combined during this 10 year period. South Africa is among the countries with the highest rape cases in the world - [higher than countries at war](https://worldpopulationreview.com/country-rankings/rape-statistics-by-country). There were 42780 cases reported in 2022/2023, which equates to 177 incidents per day. Rape is a systemic and endemic problem in South Africa.
@@ -813,7 +868,8 @@ ggplot(data = robbery_agg_national,
   ),
   label.size = 0.1) +
   theme(legend.position = "bottom",
-        legend.key.size = unit(0.15,"cm"))
+        legend.key.size = unit(0.15,"cm"))+
+  guides(colour = guide_legend(ncol = 1))
 ```
 
 Figure @fig-robbery_aggrevated_national shows that crimes in the aggravated robbery category have all increased during this 10 year period. *Robbery at residential premises* has topped the list out of these three crimes. However, *carjacking* has steadily increased in this time period and based on the trend, is expected to surpass *robbery at residential premises*.
@@ -891,7 +947,8 @@ ggplot(data = property_related_national,
   ),
   label.size = 0.1) +
   theme(legend.position = "bottom",
-        legend.key.size = unit(0.15,"cm"))
+        legend.key.size = unit(0.15,"cm"))+
+  guides(colour = guide_legend(ncol = 1))
 ```
 
 In Figure @fig-property_related_national, we see that *burglary at residential premises* has been the most common **property-related crime** between 2013 and 2023. Fortunately, we can see that the general trend has been a decrease in reported cases since 2013. Interestingly, we see a drastic drop (**22%**) in reported cases between 2019/2020 to 2020/2021. It would be interesting to investigate the effects of [COVID-19 *Hard Lockdown*](https://www.gov.za/covid-19/about/about-alert-system) on this reduction. *Theft out of or from motor vehicles* is the 2nd most common crime in this category and interestingly enough - I was a victim of a [car jamming](https://weloveit.africa/how-car-jamming-works/) incident in 2021/2022.
@@ -987,7 +1044,8 @@ ggplot(data = police_detected_crimes_national,
   ),
   label.size = 0.1) +
   theme(legend.position = "bottom",
-        legend.key.size = unit(0.15,"cm"))
+        legend.key.size = unit(0.15,"cm"))+
+  guides(colour = guide_legend(ncol = 1))
 ```
 
 Figure @fig-police_detected_crimes_national shows the number of cases detected as a result of SAPS deployment. Therefore, making sense of this data visualization is interesting as increases and decreases can not be interpreted in the same as the previous figures. A **decrease** can be viewed as a negative because this means SAPS deployment and an **increase** can be viewed as more effective SAPS deployment.
@@ -1105,7 +1163,7 @@ Figure @fig-other-serious-crimes-provincial shows the crime trend of crimes - *a
 police_detected_provincial <- filter_df_provincial(df_crime_sa_provincial, police_detected_list)
 
 # create a facet plot for the provincial 
-provincial_facet(police_detected_provincial, "Provincial Trend of Crimes Detected As A Result of Police Action Between 2013 and 2023")
+provincial_facet(police_detected_provincial, "Provincial Trend of Crimes Detected As A Result of Police Action \n Between 2013 and 2023")
 ```
 
 Figure @fig-crimes-police-detected-provincial shows the crime trend of crimes - *driving under the influence, drug-related crimes, illegal possession of firearms and ammunition, and sexual offences detected as a result of police action.* The crimes detected as a result of police action has stayed relatively constant in all the provinces besides Western Cape, Gauteng, and kwaZulu-Natal. We see a reduction in police detecting drug-related crimes in these provinces from 2017/2018.
